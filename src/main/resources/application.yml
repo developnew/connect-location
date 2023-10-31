@@ -1,0 +1,19 @@
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  profiles:
+    active: local
+
+kakao:
+  location:
+    url: https://dapi.kakao.com/v2/local/search/keyword.json
+    key: Authorization
+    value: KakaoAK 8d05b48f1bbe30b47c03cf209a331ad8
+
+naver:
+  location:
+    url: https://openapi.naver.com/v1/search/local.json
+    client: q4qU1fGw_TQnmvE7pBed
+    secret: WpynmJosMC

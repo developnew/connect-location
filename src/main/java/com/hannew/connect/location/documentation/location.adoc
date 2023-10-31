@@ -1,0 +1,48 @@
+ifndef::snippets[]
+:snippets: ../../../../../../../../build/generated-snippets
+endif::[]
+= Connect API Document
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[introduction]]
+== Service URL
+
+|===
+| 환경 | Service URL
+
+| LOCAL
+| `http://localhost:8080`
+
+|===
+
+== 장소
+
+=== 장소 검색
+
+include::{snippets}/location/search/http-request.adoc[]
+
+==== Example request
+
+include::{snippets}/location/search/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/location/search/http-response.adoc[]
+
+=== 인기검색어 TOP 10
+
+include::{snippets}/location/popularKeywords/http-request.adoc[]
+
+==== Example request
+
+include::{snippets}/location/popularKeywords/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/location/popularKeywords/http-response.adoc[]
